@@ -26,3 +26,5 @@ jobs:
         uses: DocMeThis/docmethis-check@9975303568356b360e3ee81adaf0df0813a09748  # pinned public Check release
         env:
           GITHUB_BEFORE_SHA: ${{ github.event.before }}
+        with:
+          profile: loose
