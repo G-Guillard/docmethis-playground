@@ -15,11 +15,6 @@ def calculate_total(price_cents: int, quantity: int, discount_code: str | None =
     discount_code : str | None, optional
         Optional code for a ten percent discount.
 
-    Returns
-    -------
-    int
-        Total price in cents after the discount.
-
     Raises
     ------
     ValueError

@@ -28,6 +28,13 @@ class Order:
     sku: str
     quantity: int
     total_cents: int
+    ean: int
+
+
+def check_order(order: Order, min_quantity: int) -> bool:
+    if not isinstance(min_quantity, int):
+        raise TypeError("min_quantity must be an int")
+    return order.quantity >= min_quantity
 
 
 def create_order(
